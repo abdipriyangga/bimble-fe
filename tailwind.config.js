@@ -6,7 +6,8 @@ module.exports = {
     colors: {
       main: "#081B43",
       white: "#ffffff",
-      grey: "#E0E0E0"
+      grey: "#E0E0E0",
+      red: "#b80009"
     },
     extend: {
     },
