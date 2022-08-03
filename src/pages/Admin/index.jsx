@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Header } from '../../components/Header'
-import Sidebard from '../../components/Sidebar'
+import Sidebar from '../../components/Sidebar'
 
 const Admin = () => {
   useEffect(() => {
@@ -11,7 +11,7 @@ const Admin = () => {
   return (
     <>
       <Header />
-      <Sidebard />
+      <Sidebar />
     </>
   )
 }
