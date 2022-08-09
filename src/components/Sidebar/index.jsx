@@ -10,7 +10,7 @@ const Sidebar = () => {
           <p className='text-white text-lg'>Dashboard</p>
         </div>
         <div>
-          <Dropdown color="red" />
+          <Dropdown title={`Master Soal`} />
         </div>
       </aside>
     </>
