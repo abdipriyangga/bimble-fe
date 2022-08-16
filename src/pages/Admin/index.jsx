@@ -1,6 +1,11 @@
 import React, { useEffect } from 'react'
-import { Header } from '../../components/Header'
-import Sidebar from '../../components/Sidebar'
+import LayoutAdmin from '../../components/Layouts/LayoutAdmin'
+import AddMasterSoal from './AddMasterSoal';
+
+const NotesList = () => {
+  return <div>Notes List</div>;
+};
+
 
 const Admin = () => {
   useEffect(() => {
@@ -9,10 +14,9 @@ const Admin = () => {
     };
   }, [])
   return (
-    <>
-      <Header />
-      <Sidebar />
-    </>
+    <LayoutAdmin>
+      <AddMasterSoal />
+    </LayoutAdmin>
   )
 }
 
