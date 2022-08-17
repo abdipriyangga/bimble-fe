@@ -1,5 +1,5 @@
 import { Menu, Transition } from '@headlessui/react'
-import { Fragment, useEffect, useRef, useState } from 'react'
+import { Fragment } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
@@ -11,7 +11,7 @@ function Dropdown({ title }) {
           <FontAwesomeIcon icon={faBook} className="text-white py-2" size='lg' />
         </div>
         <div>
-          <Menu.Button className="inline-flex absolute w-48 rounded-md bg-main bg-opacity-40 px-0 py-2 text-base font-semibold text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+          <Menu.Button className="inline-flex absolute w-3/4 rounded-md bg-main bg-opacity-40 py-2 text-base font-semibold text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
             <div className='flex w-full justify-between'>
               <span className=''>{title}</span>
               <FontAwesomeIcon

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import ModalInput from '../../components/Modal/ModalInput'
 
 const AddMasterSoal = () => {
   return (
@@ -17,9 +19,7 @@ const AddMasterSoal = () => {
           </button>
         </div>
         <div>
-          <button className="p-2 w-32 mx-2 text-black font-semibold bg-secMain shadow-md border-none rounded ">
-            Tambah Soal
-          </button>
+          <ModalInput />
         </div>
       </div>
       {/* Table */}
@@ -112,20 +112,14 @@ const AddMasterSoal = () => {
                     </td>
                     <tr>
                       <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                        <a
-                          className="text-green-500 hover:text-green-700"
-                          href="#"
-                        >
+                        <Link to='editSoal' className="text-main hover:text-green-700">
                           Edit
-                        </a>
+                        </Link>
                       </td>
                       <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                        <a
-                          className="text-red-500 hover:text-red-700"
-                          href="#"
-                        >
+                        <Link to='#' className="text-red hover:text-red-700">
                           Delete
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                   </tr>
