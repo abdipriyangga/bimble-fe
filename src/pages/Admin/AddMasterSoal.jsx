@@ -1,135 +1,119 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ModalInput from '../../components/Modal/ModalInput'
+import LayoutAdmin from '../../components/Layouts/LayoutAdmin'
 
 const AddMasterSoal = () => {
   return (
-    <div className='p-5 w-full'>
-      <h2 className='font-bold text-xl my-2' > Master Soal - P3K - Teknis</h2>
-      {/* Sub Header */}
-      <div className='flex items-center justify-between'>
-        <div className='flex flex-row items-center'>
-          <input
-            type="text"
-            className="block w-full px-4 py-2 text-black bg-white border rounded-md focus:border-main focus:ring-main focus:outline-none focus:ring focus:ring-opacity-40"
-            placeholder="Search..."
-          />
-          <button className="p-2 w-24 mx-2 text-black font-semibold bg-secMain shadow-md border-none rounded ">
-            Search
-          </button>
-        </div>
-        <div>
-          <ModalInput />
-        </div>
-      </div>
-      {/* Table */}
-      <div className="flex flex-col my-4">
-        <div className="overflow-x-auto">
-          <div className="p-1 w-full inline-block align-middle">
-            <div className="overflow-hidden border-none rounded-lg">
-              <table className="min-w-full divide-y divide-grey">
-                <thead className="bg-grey">
-                  <tr>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-xs font-bold text-left text-gray-500 uppercase "
-                    >
-                      No
-                    </th>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-xs font-bold text-left text-gray-500 uppercase "
-                    >
-                      Pertanyaan
-                    </th>
-                    <th
-                      colSpan={5}
-                      scope="col"
-                      className="px-4 text-center py-3 text-xs font-bold text-gray-500 uppercase "
-                    >
-                      Pilihan Jawaban
-                      <td className=" text-center px-24 py-4 text-sm text-gray-800 whitespace-nowrap">
-                        <th className="px-4">
-                          A
-                        </th>
-                        <th className="px-4">
-                          B
-                        </th>
-                        <th className="px-4">
-                          C
-                        </th>
-                        <th className="px-4">
-                          D
-                        </th>
-                        <th className="px-4">
-                          E
-                        </th>
-                      </td>
-                    </th>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase "
-                    >
-                      Jawaban Benar
-                    </th>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase "
-                    >
-                      Pembahasan
-                    </th>
-                    <th className='text-sm' colSpan={2}>Action</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
-                      1
-                    </td>
-                    <td className="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">
-                      Jone Doe
-                    </td>
-                    <td className="text-sm text-center text-gray-800 whitespace-nowrap">
-                      A
-                    </td>
-                    <td className="text-sm text-center text-gray-800 whitespace-nowrap">
-                      A
-                    </td>
-                    <td className="text-sm text-center text-gray-800 whitespace-nowrap">
-                      A
-                    </td>
-                    <td className="text-sm text-center text-gray-800 whitespace-nowrap">
-                      A
-                    </td>
-                    <td className="text-sm text-center text-gray-800 whitespace-nowrap">
-                      A
-                    </td>
-                    <td className="text-sm text-center text-gray-800 whitespace-nowrap">
-                      Jawaban Benar
-                    </td>
-                    <td className="text-sm text-center text-gray-800 whitespace-nowrap">
-                      Pembahasan
-                    </td>
-                    <tr>
-                      <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                        <Link to='editSoal' className="text-main hover:text-green-700">
-                          Edit
-                        </Link>
-                      </td>
-                      <td className="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
-                        <Link to='#' className="text-red hover:text-red-700">
-                          Delete
-                        </Link>
-                      </td>
-                    </tr>
-                  </tr>
-                </tbody>
-              </table>
+    <LayoutAdmin>
+      <div className='p-5 w-full'>
+        <h2 className='font-bold text-xl my-2' > Add Soal - P3K - Teknis</h2>
+        {/* Table */}
+        <div className="my-10">
+          <form class="w-full max-w-screen-xl">
+            <div class="md:flex md:items-center flex flex-wrap mx-3 mb-6">
+              <div class="md:w-1/3 lg:w-full mb-3">
+                <label class="block text-grey-500 tracking-wide font-bold md:text-left md:mb-0 pr-4" for="inline-full-name">
+                  Pertanyaan
+                </label>
+              </div>
+              <div class="md:w-2/3 lg:w-full">
+                <input class="bg-grey-200 appearance-none border-2 border-grey-200 rounded w-full py-2 px-4 text-grey-500 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="Pertanyaan" />
+              </div>
             </div>
-          </div>
+            <div class="md:flex md:items-center flex flex-wrap mx-3 mb-6">
+              <div class="md:w-1/3 lg:w-full mb-3">
+                <label class="block text-grey-500 font-bold md:text-left  md:mb-0 pr-4" for="inline-jawaban">
+                  Jawaban
+                </label>
+              </div>
+              <div className="md:flex md:items-center lg:w-full mb-6">
+                <div class="md:w-1/3 lg:w-16 ml-10 mb-3">
+                  <label class="block text-grey-500 font-bold md:text-left md:mb-0 pr-4" for="inline-password">
+                    A
+                  </label>
+                </div>
+                <div class="md:w-1/2 lg:w-full">
+                  <input class="bg-grey-200 appearance-none border-2 border-grey-200 rounded w-full py-2 px-4 text-grey-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="Jawaban" />
+                </div>
+              </div>
+              <div className="md:flex md:items-center lg:w-full mb-6">
+                <div class="md:w-1/3 lg:w-16 ml-10 mb-3">
+                  <label class="block text-grey-500 font-bold md:text-left md:mb-0 pr-4" for="inline-password">
+                    B
+                  </label>
+                </div>
+                <div class="md:w-1/2 lg:w-full">
+                  <input class="bg-grey-200 appearance-none border-2 border-grey-200 rounded w-full py-2 px-4 text-grey-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="Jawaban" />
+                </div>
+              </div>
+              <div className="md:flex md:items-center lg:w-full mb-6">
+                <div class="md:w-1/3 lg:w-16 ml-10 mb-3">
+                  <label class="block text-grey-500 font-bold md:text-left md:mb-0 pr-4" for="inline-password">
+                    C
+                  </label>
+                </div>
+                <div class="md:w-1/2 lg:w-full">
+                  <input class="bg-grey-200 appearance-none border-2 border-grey-200 rounded w-full py-2 px-4 text-grey-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="Jawaban" />
+                </div>
+              </div>
+              <div className="md:flex md:items-center lg:w-full mb-6">
+                <div class="md:w-1/3 lg:w-16 ml-10 mb-3">
+                  <label class="block text-grey-500 font-bold md:text-left md:mb-0 pr-4" for="inline-password">
+                    D
+                  </label>
+                </div>
+                <div class="md:w-1/2 lg:w-full">
+                  <input class="bg-grey-200 appearance-none border-2 border-grey-200 rounded w-full py-2 px-4 text-grey-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="Jawaban" />
+                </div>
+              </div>
+            </div>
+            <div class="md:flex md:items-center flex flex-wrap mx-3 mb-6">
+              <div class="md:w-1/3 lg:w-full mb-3">
+                <label class="block text-grey-500 tracking-wide font-bold md:text-left md:mb-0 pr-4" for="inline-correct-answer">
+                  Jawaban Benar
+                </label>
+              </div>
+              <div class="md:w-2/3 lg:w-full">
+                <input class="bg-grey-200 appearance-none border-2 border-grey-200 rounded w-full py-2 px-4 text-grey-500 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" placeholder="Jawaban Benar" />
+              </div>
+            </div>
+            <div class="md:flex md:items-center flex flex-wrap mx-3 mb-6">
+              <div class="md:w-1/3 lg:w-full mb-3">
+                <label class="block text-grey-500 tracking-wide font-bold md:text-left md:mb-0 pr-4" for="inline-full-name">
+                  Pembahasan
+                </label>
+              </div>
+              <div class="md:w-2/3 lg:w-full">
+                <input class="bg-grey-200 appearance-none border-2 border-grey-200 rounded w-full py-2 px-4 text-grey-500 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" placeholder="Pembahasan" />
+              </div>
+            </div>
+            <div class="md:flex md:items-center flex flex-wrap mx-3 mb-6">
+              <div class="md:w-1/3 lg:w-full mb-3">
+                <label class="block text-grey-500 tracking-wide font-bold md:text-left md:mb-0 pr-4" for="inline-full-name">
+                  Bobot
+                </label>
+              </div>
+              <div class="md:w-2/3 lg:w-full">
+                <input class="bg-grey-200 appearance-none border-2 border-grey-200 rounded w-full py-2 px-4 text-grey-500 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" placeholder="Bobot" />
+              </div>
+            </div>
+            <div class="md:flex md:items-center lg:flex lg:justify-end">
+              {/* <div class="md:w-1/3"></div> */}
+              <div class="md:w-auto px-3">
+                <button class="shadow bg-secMain hover:bg-amber-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                  Batal
+                </button>
+              </div>
+              <div class="md:w-auto px-3">
+                <button class="shadow bg-secMain hover:bg-amber-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                  Simpan
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
+    </LayoutAdmin>
   )
 }
 

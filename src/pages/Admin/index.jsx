@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import LayoutAdmin from '../../components/Layouts/LayoutAdmin'
-import AddMasterSoal from './AddMasterSoal';
+import Dashboard from './Dashboard';
 
 const Admin = () => {
   useEffect(() => {
@@ -10,7 +10,7 @@ const Admin = () => {
   }, [])
   return (
     <LayoutAdmin>
-      <AddMasterSoal />
+      <Dashboard />
     </LayoutAdmin>
   )
 }
