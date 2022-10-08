@@ -9,6 +9,8 @@ import EditMasterSoal from './Admin/EditMasterSoal';
 import AddMasterSoal from './Admin/AddMasterSoal';
 import App from './App';
 import GetMasterSoal from './Admin/GetMasterSoal';
+import GetMasterGroup from './Admin/GetMasterGroup';
+import AddMasterGroup from './Admin/AddMasterGroup';
 const Router = () => {
   return (
     <BrowserRouter>
@@ -18,6 +20,8 @@ const Router = () => {
         <Route path="/admin/getMasterSoal" element={<GetMasterSoal />} />
         <Route path="/admin/editSoal" element={<EditMasterSoal />} />
         <Route path="/admin/addSoal" element={<AddMasterSoal />} />
+        <Route path="/admin/getMasterGroup" element={<GetMasterGroup />} />
+        <Route path="/admin/addGroup" element={<AddMasterGroup />} />
       </Routes>
     </BrowserRouter>
   )

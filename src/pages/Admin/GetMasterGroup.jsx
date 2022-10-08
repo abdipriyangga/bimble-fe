@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import LayoutAdmin from '../../components/Layouts/LayoutAdmin'
 import Swal from 'sweetalert2'
 
-const GetMasterSoal = () => {
+const GetMasterGroup = () => {
   const history = useNavigate()
   const onDelete = () => {
     Swal.fire({
@@ -18,10 +18,10 @@ const GetMasterSoal = () => {
         // dispatch(deleteHistory(props.auth.token, id));
         Swal.fire(
           "Deleted!",
-          "Your history has been deleted.",
+          "Your data has been deleted.",
           "success"
         );
-        history("/admin/getMasterSoal");
+        history("/admin/getMasterGroup");
         setTimeout(() => {
           window.location.reload(false);
         }, 500);
@@ -32,7 +32,7 @@ const GetMasterSoal = () => {
   return (
     <LayoutAdmin>
       <div className='p-5 w-full'>
-        <h2 className='font-bold text-xl my-2' > Master Soal - P3K - Teknis</h2>
+        <h2 className='font-bold text-xl my-2' > Master Group - P3K - Teknis</h2>
         {/* Sub Header */}
         <div className='flex items-center justify-between'>
           <div className='flex flex-row items-center'>
@@ -46,8 +46,8 @@ const GetMasterSoal = () => {
             </button>
           </div>
           <div>
-            <Link to="/admin/addSoal" type='button' className="p-2 w-32 mx-2 text-black font-semibold bg-secMain border-none rounded ease-linear transition-all duration-150 shadow hover:shadow-lg">
-              Tambah Soal
+            <Link to="/admin/addGroup" type='button' className="p-2 w-32 mx-2 text-black font-semibold bg-secMain border-none rounded ease-linear transition-all duration-150 shadow hover:shadow-lg">
+              Tambah Grup
             </Link>
           </div>
         </div>
@@ -69,46 +69,27 @@ const GetMasterSoal = () => {
                         scope="col"
                         className="px-6 py-3 text-xs font-bold text-left text-gray-500 uppercase "
                       >
-                        Pertanyaan
+                        Nama Grup
                       </th>
                       <th
-                        colSpan={5}
                         scope="col"
                         className="px-4 text-center py-3 text-xs font-bold text-gray-500 border-none uppercase"
                       >
-                        Pilihan Jawaban
-                        <th className="px-10">
-                          A
-                        </th>
-                        <th className="px-10">
-                          B
-                        </th>
-                        <th className="px-10">
-                          C
-                        </th>
-                        <th className="px-10">
-                          D
-                        </th>
-                        <th className="px-10">
-                          E
-                        </th>
-                        {/* <td className="text-center px-24 py-4 text-sm text-gray-800 ">
-                          
-                        </td> */}
+                        Sub Kategori
                       </th>
                       <th
                         scope="col"
-                        className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase "
+                        className="px-6 py-3 text-xs font-bold text-center text-gray-500 uppercase "
                       >
-                        Jawaban Benar
+                        URL
                       </th>
                       <th
                         scope="col"
-                        className="px-6 py-3 text-xs font-bold text-right text-gray-500 uppercase "
+                        className="px-6 py-3 text-xs font-bold text-center text-gray-500 uppercase "
                       >
-                        Pembahasan
+                        Status
                       </th>
-                      <th className='text-sm' colSpan={2}>Action</th>
+                      <th className='px-6 py-3 text-xs font-bold text-center text-gray-500 uppercase'>Action</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
@@ -122,36 +103,17 @@ const GetMasterSoal = () => {
                       <td className="text-sm text-justify text-gray-800 w-48 whitespace-pre-line ">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
                       </td>
-                      <td className="text-sm text-justify text-gray-800 w-48 ">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-                      </td>
-                      <td className="text-sm text-justify text-gray-800 w-48 ">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-                      </td>
-                      <td className="text-sm text-justify text-gray-800 w-48 ">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-                      </td>
-                      <td className="text-sm text-justify text-gray-800 w-48 ">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-                      </td>
                       <td className="text-sm text-center text-gray-800">
                         Jawaban Benar
                       </td>
                       <td className="text-sm text-center text-gray-800">
                         Pembahasan
                       </td>
-                      <tr>
-                        <td className="px-6 py-4 text-sm font-medium text-right">
-                          <Link to='/admin/editSoal' className="text-main hover:text-green-700">
-                            Edit
-                          </Link>
-                        </td>
-                        <td className="px-6 py-4 text-sm font-medium text-right">
-                          <button onClick={onDelete} className="text-red hover:text-red-700">
-                            Delete
-                          </button>
-                        </td>
-                      </tr>
+                      <td className="text-sm text-justify ">
+                        <Link to='/admin/editGroup' className="text-main hover:text-green-700">
+                          Edit
+                        </Link>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -164,4 +126,4 @@ const GetMasterSoal = () => {
   )
 }
 
-export default GetMasterSoal
+export default GetMasterGroup
