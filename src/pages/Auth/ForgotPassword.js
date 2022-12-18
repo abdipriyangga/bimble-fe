@@ -1,9 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { BackgroundLogin } from '../../assets'
 import LayoutAuth from '../../components/Layouts/LayoutAuth'
 
 const ForgotPassword = () => {
+  const navigate = useNavigate();
+
+  const handleForgotPassword = (e) => {
+    e.preventDefault();
+    navigate('/auth/check-email', { replace: true })
+  }
+
   return (
     <LayoutAuth>
       <div className='flex'>
@@ -28,7 +35,7 @@ const ForgotPassword = () => {
             </div>
 
             <div className="mb-6">
-              <button className='w-full px-4 py-2 tracking-wide text-black transition-colors duration-200 transform bg-secMain rounded-md hover:bg-secMain focus:outline-none focus:bg-amber-600 font-bold'>Kirim</button>
+              <button className='w-full px-4 py-2 tracking-wide text-black transition-colors duration-200 transform bg-secMain rounded-md hover:bg-secMain focus:outline-none focus:bg-amber-600 font-bold' onClick={handleForgotPassword}>Kirim</button>
             </div>
 
           </form>

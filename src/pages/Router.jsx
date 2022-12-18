@@ -14,6 +14,8 @@ import AddMasterGroup from './Admin/AddMasterGroup';
 import Login from './Auth/Login';
 import Register from './Auth/Register';
 import ForgotPassword from './Auth/ForgotPassword';
+import CheckEmail from './Auth/CheckEmail';
+import ResetPassword from './Auth/ResetPassword';
 
 const Router = () => {
   return (
@@ -29,6 +31,8 @@ const Router = () => {
         <Route path="/auth/login" element={<Login />} />
         <Route path="/auth/register" element={<Register />} />
         <Route path="/auth/forgot-password" element={<ForgotPassword />} />
+        <Route path="/auth/check-email" element={<CheckEmail />} />
+        <Route path="/auth/reset-password" element={<ResetPassword />} />
       </Routes>
     </BrowserRouter>
   )
