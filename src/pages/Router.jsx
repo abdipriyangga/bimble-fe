@@ -12,6 +12,8 @@ import GetMasterSoal from './Admin/GetMasterSoal';
 import GetMasterGroup from './Admin/GetMasterGroup';
 import AddMasterGroup from './Admin/AddMasterGroup';
 import Login from './Auth/Login';
+import Register from './Auth/Register';
+import ForgotPassword from './Auth/ForgotPassword';
 
 const Router = () => {
   return (
@@ -25,6 +27,8 @@ const Router = () => {
         <Route path="/admin/getMasterGroup" element={<GetMasterGroup />} />
         <Route path="/admin/addGroup" element={<AddMasterGroup />} />
         <Route path="/auth/login" element={<Login />} />
+        <Route path="/auth/register" element={<Register />} />
+        <Route path="/auth/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </BrowserRouter>
   )

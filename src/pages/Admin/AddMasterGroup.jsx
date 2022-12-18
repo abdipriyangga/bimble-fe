@@ -16,7 +16,7 @@ const AddMasterGroup = () => {
                 </label>
               </div>
               <div class="md:w-2/3 lg:w-full">
-                <input class="bg-grey-200 appearance-none border-2 border-grey-200 rounded w-full py-2 px-4 text-grey-500 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="Nama Group" />
+                <input class="bg-grey-200 appearance-none border-2 border-grey-200 rounded w-full py-2 px-4 text-grey-500 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="" />
               </div>
             </div>
             <div class="md:flex md:items-center flex flex-wrap mx-3 mb-6">

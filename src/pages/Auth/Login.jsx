@@ -6,16 +6,16 @@ const Login = () => {
   return (
     <LayoutAuth>
       <div className='flex'>
-        <div className='w-1/2 h-full bg-amber-900'>
-          <img src={BackgroundLogin} alt="side-background" className='object-fill h-112.5' />
+        <div className='w-1/2 h-full bg-amber-900 lg:rounded-md rounded-md'>
+          <img src={BackgroundLogin} alt="side-background" className='object-fill lg:w-full h-112.5 lg:h-114 lg:rounded-bl-md' />
         </div>
-        <div className='flex-initial w-1/2 p-5'>
-          <div className='flex justify-center mt-14'>
+        <div className='flex-initial w-1/2 lg:h-104 lg:bg-white p-5 rounded-md lg:rounded-md'>
+          <div className='flex justify-center mt-14 lg:mt-14 '>
             <img src={Logo} alt="Logo" className='mx-1' />
             <span className='text-black my-2 mx-2 text-lg font-bold'>Back to Basic</span>
           </div>
-          <p className='text-center text-lg font-bold tracking-wider mt-10'>Login To Your Account</p>
-          <form className='ml-11 p-3 mt-10 w-4/5'>
+          <p className='text-center text-lg font-bold tracking-wider mt-10 lg:mt-10'>Login To Your Account</p>
+          <form className='ml-11 p-3 mt-10 lg:mt-10 w-4/5'>
             <div className="mb-2 ">
               <label
                 for="email"
@@ -45,7 +45,7 @@ const Login = () => {
                 for="email"
                 className="block text-sm text-right font-semibold text-grey-800"
               >
-                <Link to='/'>
+                <Link to='/auth/forgot-password'>
                   Forgot password?
                 </Link>
               </label>
