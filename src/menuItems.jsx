@@ -5,7 +5,7 @@ export const menuItems = [
   },
   {
     title: "Master Soal",
-    url: '/admin/master-soal',
+    url: '/admin/get-master-soal',
     submenu: [
       {
         title: "P3K Guru",

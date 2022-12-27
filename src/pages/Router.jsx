@@ -23,7 +23,7 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/admin" element={<Admin />} />
-        <Route path="/admin/getMasterSoal" element={<GetMasterSoal />} />
+        <Route path="/admin/get-master-soal" element={<GetMasterSoal />} />
         <Route path="/admin/editSoal" element={<EditMasterSoal />} />
         <Route path="/admin/addSoal" element={<AddMasterSoal />} />
         <Route path="/admin/getMasterGroup" element={<GetMasterGroup />} />
