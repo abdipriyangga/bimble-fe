@@ -16,6 +16,7 @@ import Register from './Auth/Register';
 import ForgotPassword from './Auth/ForgotPassword';
 import CheckEmail from './Auth/CheckEmail';
 import ResetPassword from './Auth/ResetPassword';
+import GetMasterUser from './Admin/GetMasterUser';
 
 const Router = () => {
   return (
@@ -25,8 +26,9 @@ const Router = () => {
         <Route path="/admin" element={<Admin />} />
         <Route path="/admin/get-master-soal" element={<GetMasterSoal />} />
         <Route path="/admin/editSoal" element={<EditMasterSoal />} />
-        <Route path="/admin/addSoal" element={<AddMasterSoal />} />
-        <Route path="/admin/getMasterGroup" element={<GetMasterGroup />} />
+        <Route path="/admin/add-soal" element={<AddMasterSoal />} />
+        <Route path="/admin/master-group" element={<GetMasterGroup />} />
+        <Route path="/admin/master-user" element={<GetMasterUser />} />
         <Route path="/admin/addGroup" element={<AddMasterGroup />} />
         <Route path="/auth/login" element={<Login />} />
         <Route path="/auth/register" element={<Register />} />

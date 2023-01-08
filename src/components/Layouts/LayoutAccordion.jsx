@@ -1,19 +1,30 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
-const LayoutAccordion = ({ No, Pertanyaan, Aksi, children, index, activeIndex, setActiveIndex }) => {
+import { IconActionEdit, IconDelete } from '../../assets';
+import { Link } from 'react-router-dom';
+const LayoutAccordion = ({ No, Pertanyaan, Edit, Delete, children, index, activeIndex, setActiveIndex }) => {
   const handleSetIndex = (index) => (activeIndex !== index) && setActiveIndex(index);
   return (
     <>
-      <div onClick={() => handleSetIndex(index)} className='flex justify-between p-2 mt-0 lg:mt-0 lg:my-2 w-full lg:w-full rounded bg-red'>
-        <div className='flex '>
-          <div className='flex w-full justify-between text-white font-bold'>
-            <div className='p-2  '>
+      <div onClick={() => handleSetIndex(index)} className='flex justify-between p-2 mt-0 lg:mt-0 lg:my-0 w-full lg:w-full bg-grey-100 shadow-3xl shadow-black'>
+        <div className='flex'>
+          <div className='flex w-full justify-between font-extralight text-grey-600'>
+            <div className='p-2'>
               <span className='m-5'>{No}</span>
               <span className='m-5'>{Pertanyaan}</span>
             </div>
-            <div className='p-2 '>
-              <span>{Aksi}</span>
+            <div className='p-2 flex '>
+              <span >
+                <Link to={Edit}>
+                  <img src={IconActionEdit} alt="Edit" />
+                </Link>
+              </span>
+              <span>
+                <Link to={Delete}>
+                  <img src={IconDelete} alt="Edit" />
+                </Link>
+              </span>
             </div>
           </div>
         </div>
@@ -26,7 +37,7 @@ const LayoutAccordion = ({ No, Pertanyaan, Aksi, children, index, activeIndex, s
         </div>
       </div>
       {(activeIndex === index) && (
-        <div className="shadow-3xl rounded-2xl shadow-black p-4 mb-6">
+        <div className="shadow-3xl w-full rounded-2xl shadow-black p-2 mb-0">
           {children}
         </div>
       )}

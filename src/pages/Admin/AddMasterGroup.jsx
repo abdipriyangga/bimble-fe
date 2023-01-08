@@ -8,7 +8,7 @@ const AddMasterGroup = () => {
         <h2 className='font-bold text-xl my-2' > Add Group - P3K - Teknis</h2>
         {/* Table */}
         <div className="my-10">
-          <form class="w-full max-w-screen-xl">
+          <form class="w-full ">
             <div class="md:flex md:items-center flex flex-wrap mx-3 mb-6">
               <div class="md:w-1/3 lg:w-full mb-3">
                 <label class="block text-black tracking-wide font-bold md:text-left md:mb-0 pr-4" for="inline-full-name">

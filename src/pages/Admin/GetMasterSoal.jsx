@@ -47,7 +47,7 @@ const GetMasterSoal = () => {
             </button>
           </div>
           <div className='text-center'>
-            <Link to="/admin/addSoal" type='button' className="p-2 w-32 mx-2 text-black font-semibold bg-secMain border-none rounded ease-linear transition-all duration-150 shadow hover:shadow-lg">
+            <Link to="/admin/add-soal" type='button' className="p-2 w-32 mx-2 text-black font-semibold bg-secMain border-none rounded ease-linear transition-all duration-150 shadow hover:shadow-lg">
               Tambah Soal
             </Link>
           </div>
@@ -55,15 +55,16 @@ const GetMasterSoal = () => {
         {/* Table */}
 
         {/* Start Accordion */}
-        <div className='flex p-2 mt-2 w-full lg:w-full rounded bg-violet-800'>
-          <div className='flex w-full justify-between text-white font-bold'>
-            <div className='p-2  '>
+        <div className='flex p-2 mt-2 w-full lg:w-full bg-grey-200'>
+          <div className='flex w-full justify-between  text-grey-500 font-bold'>
+            <div className='p-2'>
               <span className='m-5'>No</span>
               <span className='m-5'>Pertanyaan</span>
             </div>
             <div className='p-2 '>
-              <span>Aksi</span>
+              <span className='-ml-24 p-2 text-center'>Action</span>
             </div>
+
           </div>
         </div>
         <Accordion />

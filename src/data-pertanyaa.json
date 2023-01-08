@@ -1,0 +1,35 @@
+[
+  {
+    "question": "Jika produksi barang mutu B dari tahun 2014 ke tahun 2015 bertambah 26% berapa nilai total produksi barang",
+    "ans_a": "20 barang",
+    "ans_b": "40 barang",
+    "ans_c": "10 barang",
+    "ans_d": "50 barang",
+    "ans_e": "30 barang",
+    "correct_ans": "ans_a",
+    "bobot": "5",
+    "reason": "Lorem ipsum "    
+  },
+  {
+    "question": "Jika produksi barang mutu B dari tahun 2014 ke tahun 2015 bertambah 26% berapa nilai total produksi barang",
+    "ans_a": "20 barang",
+    "ans_b": "40 barang",
+    "ans_c": "10 barang",
+    "ans_d": "50 barang",
+    "ans_e": "30 barang",
+    "correct_ans": "ans_a",
+    "bobot": "5",
+    "reason": "Lorem ipsum "    
+  },
+  {
+    "question": "Jika produksi barang mutu B dari tahun 2014 ke tahun 2015 bertambah 26% berapa nilai total produksi barang",
+    "ans_a": "20 barang",
+    "ans_b": "40 barang",
+    "ans_c": "10 barang",
+    "ans_d": "50 barang",
+    "ans_e": "30 barang",
+    "correct_ans": "ans_a",
+    "bobot": "5",
+    "reason": "Lorem ipsum "    
+  }
+]
