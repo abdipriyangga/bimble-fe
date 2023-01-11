@@ -17,12 +17,13 @@ import ForgotPassword from './Auth/ForgotPassword';
 import CheckEmail from './Auth/CheckEmail';
 import ResetPassword from './Auth/ResetPassword';
 import GetMasterUser from './Admin/GetMasterUser';
+import Homepage from './Homepage';
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/admin/get-master-soal" element={<GetMasterSoal />} />
         <Route path="/admin/editSoal" element={<EditMasterSoal />} />
@@ -34,7 +35,6 @@ const Router = () => {
         <Route path="/auth/register" element={<Register />} />
         <Route path="/auth/forgot-password" element={<ForgotPassword />} />
         <Route path="/auth/check-email" element={<CheckEmail />} />
-        <Route path="/auth/reset-password" element={<ResetPassword />} />
       </Routes>
     </BrowserRouter>
   )

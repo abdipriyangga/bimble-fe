@@ -4,4 +4,10 @@ import Email from './Vector.svg'
 import IconBook from './icons/icon-book.svg'
 import IconActionEdit from './icons/bx_edit.svg'
 import IconDelete from './icons/icon-delete.svg'
-export { Logo, BackgroundLogin, Email, IconBook, IconActionEdit, IconDelete }
+import ImageFirst from './image_1.svg'
+import ImageSecond from './image_2.svg'
+import Facebook from './icons/facebook.svg'
+import Twitter from './icons/twetter.svg'
+import Instagram from './icons/instagram.svg'
+import Linkedin from './icons/linkedin.svg'
+export { Logo, BackgroundLogin, Email, IconBook, IconActionEdit, IconDelete, ImageFirst, ImageSecond, Facebook, Twitter, Instagram, Linkedin }
