@@ -10,4 +10,6 @@ import Facebook from './icons/facebook.svg'
 import Twitter from './icons/twetter.svg'
 import Instagram from './icons/instagram.svg'
 import Linkedin from './icons/linkedin.svg'
-export { Logo, BackgroundLogin, Email, IconBook, IconActionEdit, IconDelete, ImageFirst, ImageSecond, Facebook, Twitter, Instagram, Linkedin }
+import LogoBni from './logo/logoBni.svg'
+import QrImage from './qrImage.svg'
+export { Logo, BackgroundLogin, Email, IconBook, IconActionEdit, IconDelete, ImageFirst, ImageSecond, Facebook, Twitter, Instagram, Linkedin, LogoBni, QrImage }
