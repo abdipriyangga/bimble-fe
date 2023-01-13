@@ -23,7 +23,7 @@ const Homepage = () => {
           <p className='text-justify text-sm text-grey-400'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         <div className='w-1/2 p-3'>
-          <div className='mt-10 ml-28'>
+          <div className='mt-10 ml-28 lg:mt-10 lg:ml-28'>
             <img src={ImageFirst} alt="image_right_section" width={380} height={380} />
           </div>
         </div>
@@ -62,7 +62,7 @@ const Homepage = () => {
                 <p className='text-grey-400 p-2 mt-5 text-xs text-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
               </div>
               <div className='text-left mt-2 p-2'>
-                <Link to="#" type='button' className="p-2 w-32 mx-2 text-black text-center font-semibold bg-secMain border-none rounded ease-linear transition-all duration-150 shadow hover:shadow-lg hover:shadow-grey-800">
+                <Link to={`/payment-user`} type='button' className="p-2 w-32 mx-2 text-black text-center font-semibold bg-secMain border-none rounded ease-linear transition-all duration-150 shadow hover:shadow-lg hover:shadow-grey-800">
                   Beli Try Out
                 </Link>
               </div>
@@ -73,11 +73,11 @@ const Homepage = () => {
                 <p className='text-white text-xl mt-3 ml-5 font-semibold'>RP 10.000</p>
               </div>
               <div className='p-2'>
-                <p className='text-white text-xs text-center'>Pegawai Pemerintah Dengan Perjanjian Kerja (PPPK)</p>
+                <p className='text-white text-xs text-center'>Calon Pegawai Negeri Sipil (CPNS)</p>
                 <p className='text-grey-400 p-2 mt-5 text-xs text-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
               </div>
               <div className='text-left mt-2 p-2'>
-                <Link to="#" type='button' className="p-2 w-32 mx-2 text-black text-center font-semibold bg-secMain border-none rounded ease-linear transition-all duration-150 shadow hover:shadow-lg hover:shadow-grey-800">
+                <Link to="/payment-user" type='button' className="p-2 w-32 mx-2 text-black text-center font-semibold bg-secMain border-none rounded ease-linear transition-all duration-150 shadow hover:shadow-lg hover:shadow-grey-800">
                   Beli Try Out
                 </Link>
               </div>

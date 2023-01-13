@@ -15,9 +15,9 @@ import Login from './Auth/Login';
 import Register from './Auth/Register';
 import ForgotPassword from './Auth/ForgotPassword';
 import CheckEmail from './Auth/CheckEmail';
-import ResetPassword from './Auth/ResetPassword';
 import GetMasterUser from './Admin/GetMasterUser';
 import Homepage from './Homepage';
+import Payment from './Payment';
 
 const Router = () => {
   return (
@@ -35,6 +35,7 @@ const Router = () => {
         <Route path="/auth/register" element={<Register />} />
         <Route path="/auth/forgot-password" element={<ForgotPassword />} />
         <Route path="/auth/check-email" element={<CheckEmail />} />
+        <Route path="/payment-user" element={<Payment />} />
       </Routes>
     </BrowserRouter>
   )
