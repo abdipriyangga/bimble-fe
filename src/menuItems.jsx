@@ -63,6 +63,6 @@ export const menuItems = [
   },
   {
     title: "Validasi",
-    url: '/admin/validasi'
+    url: '/admin/payment-validation'
   },
 ]

@@ -12,4 +12,6 @@ import Instagram from './icons/instagram.svg'
 import Linkedin from './icons/linkedin.svg'
 import LogoBni from './logo/logoBni.svg'
 import QrImage from './qrImage.svg'
-export { Logo, BackgroundLogin, Email, IconBook, IconActionEdit, IconDelete, ImageFirst, ImageSecond, Facebook, Twitter, Instagram, Linkedin, LogoBni, QrImage }
+import Success from './successBtn.svg'
+import Reject from './rejectBtn.svg'
+export { Logo, BackgroundLogin, Email, IconBook, IconActionEdit, IconDelete, ImageFirst, ImageSecond, Facebook, Twitter, Instagram, Linkedin, LogoBni, QrImage, Success, Reject }

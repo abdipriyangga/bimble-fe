@@ -6,7 +6,7 @@ const LayoutAdmin = (props) => {
   const { children } = props;
   return (
     <>
-      <Header />
+      <Header name={'admin'} />
       <div className='flex flex-row'>
         <Sidebar />
         {children}

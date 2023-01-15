@@ -12,8 +12,10 @@ export const Header = ({ title, name }) => {
           <header className='p-3 bg-main flex flex-row justify-between'>
             <title>{title}</title>
             <div className='flex'>
-              <img src={Logo} alt="Logo" className='mx-1' />
-              <span className='text-white my-2 mx-2 text-lg font-bold'>Back to School</span>
+              <Link to={'/'} className='w-full flex'>
+                <img src={Logo} alt="Logo" className='mx-1' />
+                <span className='text-white my-2 mx-2 text-lg font-bold'>Back to School</span>
+              </Link>
             </div>
             <div className='flex flex-shrink'>
               <div className='p-2 mx-2'>
