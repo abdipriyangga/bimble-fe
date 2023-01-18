@@ -1,35 +1,35 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import LayoutAdmin from '../../components/Layouts/LayoutAdmin'
-import Swal from 'sweetalert2'
+// import Swal from 'sweetalert2'
 import { IconActionEdit } from '../../assets'
 
 const GetMasterGroup = () => {
-  const history = useNavigate()
-  const onDelete = () => {
-    Swal.fire({
-      title: "Are you sure?",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, delete it!"
-    }).then((result) => {
-      if (result.isConfirmed) {
-        // dispatch(deleteHistory(props.auth.token, id));
-        Swal.fire(
-          "Deleted!",
-          "Your data has been deleted.",
-          "success"
-        );
-        history("/admin/getMasterGroup");
-        setTimeout(() => {
-          window.location.reload(false);
-        }, 500);
-        console.log("page to reload");
-      }
-    });
-  };
+  // const history = useNavigate()
+  // const onDelete = () => {
+  //   Swal.fire({
+  //     title: "Are you sure?",
+  //     icon: "warning",
+  //     showCancelButton: true,
+  //     confirmButtonColor: "#3085d6",
+  //     cancelButtonColor: "#d33",
+  //     confirmButtonText: "Yes, delete it!"
+  //   }).then((result) => {
+  //     if (result.isConfirmed) {
+  //       // dispatch(deleteHistory(props.auth.token, id));
+  //       Swal.fire(
+  //         "Deleted!",
+  //         "Your data has been deleted.",
+  //         "success"
+  //       );
+  //       history("/admin/getMasterGroup");
+  //       setTimeout(() => {
+  //         window.location.reload(false);
+  //       }, 500);
+  //       console.log("page to reload");
+  //     }
+  //   });
+  // };
   return (
     <LayoutAdmin>
       <div className='p-5 w-full'>

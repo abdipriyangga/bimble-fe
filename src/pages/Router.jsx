@@ -7,7 +7,6 @@ import {
 import Admin from './Admin';
 import EditMasterSoal from './Admin/EditMasterSoal';
 import AddMasterSoal from './Admin/AddMasterSoal';
-import App from './App';
 import GetMasterSoal from './Admin/GetMasterSoal';
 import GetMasterGroup from './Admin/GetMasterGroup';
 import AddMasterGroup from './Admin/AddMasterGroup';

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import Swal from 'sweetalert2'
+// import { Link } from 'react-router-dom'
+// import Swal from 'sweetalert2'
 import { Reject, Success } from '../../assets'
 import LayoutAdmin from '../../components/Layouts/LayoutAdmin'
-import DataUser from '../../data-user.json'
+// import DataUser from '../../data-user.json'
 const PaymentValidation = () => {
-  const data = DataUser;
+  // const data = DataUser;
   const [success, setSuccess] = useState('false')
   const [reject, setReject] = useState('false')
   const handleSuccess = (e) => {
