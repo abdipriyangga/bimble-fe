@@ -7,9 +7,11 @@ import {
 import Admin from './Admin';
 import EditMasterSoal from './Admin/EditMasterSoal';
 import AddMasterSoal from './Admin/AddMasterSoal';
+import App from './App';
 import GetMasterSoal from './Admin/GetMasterSoal';
 import GetMasterGroup from './Admin/GetMasterGroup';
 import AddMasterGroup from './Admin/AddMasterGroup';
+import PaymentValidation from './Admin/PaymentValidation';
 import Login from './Auth/Login';
 import Register from './Auth/Register';
 import ForgotPassword from './Auth/ForgotPassword';
@@ -18,7 +20,6 @@ import GetMasterUser from './Admin/GetMasterUser';
 import Homepage from './Homepage';
 import Payment from './Payment';
 import PaymentValidation from './Admin/PaymentValidation';
-import LoginAdmin from './Auth/LoginAdmin';
 
 const Router = () => {
   return (
@@ -39,6 +40,8 @@ const Router = () => {
         <Route path="/auth/forgot-password" element={<ForgotPassword />} />
         <Route path="/auth/check-email" element={<CheckEmail />} />
         <Route path="/payment-user" element={<Payment />} />
+        <Route path="/user/tryout-user" element={<TryoutUser />} />
+        <Route path="/user/history-tryout-user" element={<HistoryTryout />} />
       </Routes>
     </BrowserRouter>
   )

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "kategori": "P3K",
+    "subKategori": "Guru",
+    "tanggalPengerjaan": "01/20/2023"
+  },
+  {
+    "id": 2,
+    "kategori": "P3K",
+    "subKategori": "Guru",
+    "tanggalPengerjaan": "01/20/2023"
+  },
+  {
+    "id": 3,
+    "kategori": "P3K",
+    "subKategori": "Guru",
+    "tanggalPengerjaan": "01/20/2023"
+  },
+  {
+    "id": 4,
+    "kategori": "P3K",
+    "subKategori": "Guru",
+    "tanggalPengerjaan": "01/20/2023"
+  }
+]

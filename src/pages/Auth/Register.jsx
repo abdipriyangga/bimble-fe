@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { BackgroundLogin, Logo } from '../../assets'
+import { BackgroundLogin } from '../../assets'
 import LayoutAuth from '../../components/Layouts/LayoutAuth'
 
 const Register = () => {
