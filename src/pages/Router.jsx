@@ -7,7 +7,6 @@ import {
 import Admin from './Admin';
 import EditMasterSoal from './Admin/EditMasterSoal';
 import AddMasterSoal from './Admin/AddMasterSoal';
-import App from './App';
 import GetMasterSoal from './Admin/GetMasterSoal';
 import GetMasterGroup from './Admin/GetMasterGroup';
 import AddMasterGroup from './Admin/AddMasterGroup';
@@ -19,8 +18,9 @@ import CheckEmail from './Auth/CheckEmail';
 import GetMasterUser from './Admin/GetMasterUser';
 import Homepage from './Homepage';
 import Payment from './Payment';
-import PaymentValidation from './Admin/PaymentValidation';
-
+import LoginAdmin from './Auth/LoginAdmin';
+import TryoutUser from './TryoutUser';
+import HistoryTryout from './HistoryTryout'
 const Router = () => {
   return (
     <BrowserRouter>
