@@ -19,6 +19,7 @@ import GetMasterUser from './Admin/GetMasterUser';
 import Homepage from './Homepage';
 import Payment from './Payment';
 import TryoutUser from './TryoutUser';
+import HistoryTryout from './HistoryTryout';
 
 const Router = () => {
   return (
@@ -38,7 +39,8 @@ const Router = () => {
         <Route path="/auth/forgot-password" element={<ForgotPassword />} />
         <Route path="/auth/check-email" element={<CheckEmail />} />
         <Route path="/payment-user" element={<Payment />} />
-        <Route path="/tryout-user" element={<TryoutUser />} />
+        <Route path="/user/tryout-user" element={<TryoutUser />} />
+        <Route path="/user/history-tryout-user" element={<HistoryTryout />} />
       </Routes>
     </BrowserRouter>
   )
