@@ -1,8 +1,15 @@
 import React from 'react'
-import LayoutAuth from '../../components/Layouts/LayoutAuth'
+import { Link, useNavigate } from 'react-router-dom'
 import { BackgroundLogin, Logo } from '../../assets'
-import { Link } from 'react-router-dom'
-const Login = (props) => {
+import LayoutAuth from '../../components/Layouts/LayoutAuth'
+
+const LoginAdmin = () => {
+  const history = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault()
+    history('/admin')
+  }
   return (
     <LayoutAuth>
       <div className='flex'>
@@ -51,25 +58,7 @@ const Login = (props) => {
               </label>
             </div>
             <div className="mb-12">
-              <button type='submit' className='w-full px-4 py-2 tracking-wide text-black transition-colors duration-200 transform bg-secMain rounded-md hover:bg-secMain focus:outline-none focus:bg-amber-600 font-bold'>Login</button>
-            </div>
-            <div className="mb-2">
-              <label
-                for="email"
-                className="block text-sm text-center font-semibold tracking-wider text-grey-700"
-              > Dont have an account?
-                <Link to='/auth/register' className='tracking-wider ml-2 text-main'>
-                  Sign Up
-                </Link>
-              </label>
-              <label
-                for="email"
-                className="block text-sm text-center font-semibold tracking-wider mt-5 text-grey-700"
-              > Or login as
-                <Link to='/auth/login-admin' className='tracking-wider ml-2 text-main hover:text-amber-500'>
-                  Admin
-                </Link>
-              </label>
+              <button type='submit' onClick={handleLogin} className='w-full px-4 py-2 tracking-wide text-black transition-colors duration-200 transform bg-secMain rounded-md hover:bg-secMain focus:outline-none focus:bg-amber-600 font-bold'>Login</button>
             </div>
           </form>
         </div>
@@ -78,4 +67,4 @@ const Login = (props) => {
   )
 }
 
-export default Login
+export default LoginAdmin
